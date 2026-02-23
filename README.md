@@ -29,3 +29,41 @@ sudo apt install texlive-full texlive-lang-cyrillic
 
 # Fedora
 sudo dnf install texlive-scheme-full texlive-collection-langcyrillic
+Installation
+
+Clone the repository (or just download invoice_gen.cpp)
+
+Bash
+git clone https://github.com/YOUR-USERNAME/russian-invoice-pdf-generator.git
+cd russian-invoice-pdf-generator
+
+Compile
+
+Bash
+g++ -std=c++17 -Wall -O2 invoice_gen.cpp -o invoice-gen
+
+(Optional) Make it globally available
+
+Bash
+sudo cp invoice-gen /usr/local/bin/
+Usage
+Bash
+./invoice-gen
+The program will ask step-by-step:
+
+Invoice number and date
+Seller / Buyer / Shipper / Consignee details
+Payment document reference (if any)
+Goods / services (you can add several positions)
+
+Press Enter on any question to use the built-in demo values.
+After you finish entering data:
+
+invoice.tex file is created
+pdflatex is called automatically → invoice.pdf appears
+Open the resulting PDF in any viewer (evince, okular, firefox, etc.)
+
+Quick test with defaults
+Bash
+./invoice-gen
+# just press Enter on every prompt
