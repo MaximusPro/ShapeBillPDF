@@ -30,7 +30,7 @@ sudo apt install texlive-full texlive-lang-cyrillic
 # Fedora
 sudo dnf install texlive-scheme-full texlive-collection-langcyrillic
 Installation
-
+```
 Clone the repository (or just download invoice_gen.cpp)
 
 Bash
