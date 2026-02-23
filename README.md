@@ -33,22 +33,24 @@ Installation
 ```
 Clone the repository (or just download invoice_gen.cpp)
 
-Bash
+```bash
 git clone https://github.com/YOUR-USERNAME/russian-invoice-pdf-generator.git
 cd russian-invoice-pdf-generator
-
+```
 Compile
 
-Bash
+```bash
 g++ -std=c++17 -Wall -O2 invoice_gen.cpp -o invoice-gen
-
+```
 (Optional) Make it globally available
 
-Bash
+```bash
 sudo cp invoice-gen /usr/local/bin/
+```
 Usage
-Bash
+```bash
 ./invoice-gen
+```
 The program will ask step-by-step:
 
 Invoice number and date
@@ -64,6 +66,6 @@ pdflatex is called automatically → invoice.pdf appears
 Open the resulting PDF in any viewer (evince, okular, firefox, etc.)
 
 Quick test with defaults
-Bash
+```bash
 ./invoice-gen
-# just press Enter on every prompt
+```
